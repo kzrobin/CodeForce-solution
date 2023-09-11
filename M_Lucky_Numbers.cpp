@@ -6,6 +6,7 @@ int main()
     int a,b,i;
     cin>>a>>b;
     int x=-1;
+    
     for( i=a;i<=b;i++)
     {
         string s;

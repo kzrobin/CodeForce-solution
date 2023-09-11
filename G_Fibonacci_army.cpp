@@ -15,7 +15,6 @@ using namespace std;
 int main(){
 ll n;
 scll(n);
-
 vector<ll>fibo(n+1,1);
 for(ll i=2;i<=n;i++){
     fibo[i]=fibo[i-1]+fibo[i-2];

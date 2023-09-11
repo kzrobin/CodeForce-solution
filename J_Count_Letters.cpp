@@ -12,6 +12,7 @@ int main(){
     for(int i=0;i<s.size();i++){
         arr[(int)s[i]-'a']++;
     }
+    
     for(int i=0;i<26;i++)
         if(arr[i])
             cout<<char(i+'a')<<" : "<<arr[i]<<endl;

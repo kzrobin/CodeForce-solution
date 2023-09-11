@@ -48,6 +48,7 @@ void solve(){
             cout<<"Case "<<j<<": NO"<<endl;
     }
 }
+
 int main(){
     solve();
 return 0;

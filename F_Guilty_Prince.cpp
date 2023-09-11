@@ -14,7 +14,6 @@ using namespace std;
 char arr[20][20];
 bool visit[20][20];
 
-
 ll sec_BFS_2D(ll n, ll m, ll a,ll b){
     ll cnt=1;
     queue<pair<ll,ll>>q;

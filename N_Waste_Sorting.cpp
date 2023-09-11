@@ -26,7 +26,6 @@ void solve(){
             waste[3]=0;
         else waste[3]-=recycle[0];
     }
-
     if(recycle[1]>0){
         if(recycle[1]>=waste[4])
             waste[4]=0;

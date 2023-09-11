@@ -13,7 +13,6 @@ typedef long long ll;
 typedef unsigned long long ull;
 using namespace std;
 
-
 void solve(){
     ll n;
     scll(n);

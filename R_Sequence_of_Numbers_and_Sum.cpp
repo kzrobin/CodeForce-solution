@@ -3,8 +3,6 @@ using namespace std;
 int main()
 {
     int m,n;
-
-
     while(1)
     {
         cin>>m>>n;
@@ -14,7 +12,6 @@ int main()
             int sum=0;
             for(int i=m;i<=n;i++)
             {
-
                 cout<<i<<" ";
                 sum=sum+i;
             }
@@ -31,8 +28,5 @@ int main()
             }
             cout<<"sum ="<<sum<<endl;
         }
-
-
     }
-
 }

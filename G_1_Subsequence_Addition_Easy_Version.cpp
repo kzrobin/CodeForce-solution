@@ -19,6 +19,7 @@ void ans(int x){
     else
         printf("NO\n");
 }
+
 void solve(){
     ll n;
     scll(n);

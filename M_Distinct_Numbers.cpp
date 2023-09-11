@@ -7,6 +7,7 @@
 using namespace std;
 
 int main(){
+    
     set<int> dis;
     int n;
     cin>>n;
