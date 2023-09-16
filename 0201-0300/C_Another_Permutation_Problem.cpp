@@ -12,27 +12,31 @@
 typedef long long ll;
 typedef unsigned long long ull;
 using namespace std;
-void ans(int x){
-    if(x)
-        printf("YES\n");
-    else
-        printf("NO\n");
+
+ll sum_squares(ll n){
+    return (n*(n+1)*(2*n+1))/6;
 }
+
 void solve(){
     ll n;
     scll(n);
-    vector<ll>arr(n), s_arr;
-    for(auto &i : arr)
-        scll(i);
-    s_arr=arr;
-    sort(s_arr.begin(),s_arr.end());
-    for(ll i=0;i<n;i++){
-        if(arr[i]%2!=s_arr[i]%2){
-            ans(0);
-            return;
+
+    ll k=n/2;
+    ll sum;
+    ll ans=0;
+    ll x;
+    for(ll i=k;i<=n;i++){
+        ll k=0;
+        sum=sum_squares(i-1);
+        for(ll j=i;j<=n;j++){
+            x=j*(n-j+i);
+            sum+=x;
+            k=max(k,x);
         }
+        sum-=k;
+        ans=max(ans,sum);
     }
-    ans(1);
+    cout<<ans<<endl;
 }
 int main(){
     ll t;
