@@ -12,17 +12,18 @@
 typedef long long ll;
 using namespace std;
 const ll N=10e3+1;
+ vector<string> st(1e5);
 void solve(){
     ll n,q;
     scll(n);    scll(q);
 
     char arr[N];
     cin.ignore();
-    vector<string> st(n);
+   
     for(ll i=0;i<n;i++){
         getline(cin,st[i]);
     }
-    
+
     ll m;
     for(ll i=0;i<q;i++){
         scanf(" %s",arr);
